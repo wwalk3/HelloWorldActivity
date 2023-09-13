@@ -8,28 +8,19 @@ import android.widget.TextView
 
 class MainActivity : AppCompatActivity() {
 
-    // Declare view properties
+    // Declare view properties - the first one is done for you
     lateinit var displayTextView: TextView
-    lateinit var nameEditText: EditText
-    lateinit var clickMeButton: Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        // Initialize views defined in Layout
+        // Initialize with views defined in Layout - the first one is done for you
         displayTextView = findViewById(R.id.displayTextView)
-        nameEditText = findViewById(R.id.nameEditText)
-        clickMeButton = findViewById(R.id.clickMeButton)
+
         
-        // Respond to button click event
-        clickMeButton.setOnClickListener{
+        // Respond to button click event per specifications
 
-            /* Write your code here */
-
-            displayTextView.text = "Hello, ${nameEditText.text}"
-
-        }
 
     }
 }
