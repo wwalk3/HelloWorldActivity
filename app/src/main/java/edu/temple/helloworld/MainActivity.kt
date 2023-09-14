@@ -25,6 +25,11 @@ class MainActivity : AppCompatActivity() {
 
         
         // Respond to button click event per specifications
+        clickMebutton.setOnClickListener{ view ->
+            nameEditText = nameEditText.toString();
+            String helloText = "Hello" + nameEditText;
+            displayTextView = helloText;
+        }
 
 
     }
